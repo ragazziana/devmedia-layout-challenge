@@ -13,7 +13,7 @@ No projeto tentei aplicar meus conhecimentos de:
 - CSS Flexbox
 - Mobile-first aproach
 - Variáveis
-- 
+
 ## O Desafio
 
 O desafio consiste em reproduzir o layout proposto da forma mais fiel possível ao design e utilizando quatro tamanhos de viewport, 320, 450, 768 e 1366.
