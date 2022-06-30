@@ -410,7 +410,7 @@ and (max-device-width : 767px) {
     }
 
     header{
-        background-image: url(images/london.jpg);
+        background-image: url(/images/london.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -520,7 +520,6 @@ and (max-device-width : 767px) {
     }
 
     header{
-        background-color: blueviolet;
         /* background-image: url(/images/london.jpg);
         background-repeat: no-repeat;
         background-size: contain; */
