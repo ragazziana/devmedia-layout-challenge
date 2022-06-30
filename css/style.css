@@ -69,10 +69,19 @@ img{
     margin-bottom: 3.5rem;
 }
 
+.abas a{
+    text-decoration: none;
+    color: var(--white);
+}
+
 .aba-flight__svg{
     fill: var(--white);
     width: 1.3rem;
     margin-right: 1.5rem;
+}
+
+.airplane_svg{
+    transform: rotate(300deg);
 }
 
 .aba-flight{
@@ -132,10 +141,16 @@ img{
     border: none;
     margin-top: 1.5rem;
     margin-bottom: 3rem;
+    transition: .5s;
 }
 
-label,
-button{
+.searchbox__button:hover{
+    background-color: var(--main-orange);
+    cursor: pointer;
+}
+
+
+label{
     display: block;
     line-height: 1.5;
 }
@@ -185,6 +200,16 @@ svg{
 .offer_img{
     position: relative;
     margin-bottom: 1.5rem;
+}
+
+.offers__images img{
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.offers__images img:hover{
+    opacity: .7;
 }
 
 .offer_caption{
@@ -248,10 +273,22 @@ svg{
     text-decoration: none;
 }
 
+.card__offer-link:visited{
+    color: var(--dark-background-grey);
+}
+
+.card__offer-link:active{
+    color: var(--main-orange);
+}
+
+.card__offer-link:hover{        
+    color: var(--main-orange);
+    font-weight: 700;
+}
+
 .newsletter{
     background-color: var(--background-grey);
     padding: 1.2rem;
-
 }
 
 .newsletter__wrapper{
@@ -290,6 +327,12 @@ svg{
     border: none;
     color: var(--white);
     margin-top: 1.5rem;
+    transition: .5s;
+}
+
+.newsletter__button:hover{
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .contact{
@@ -339,13 +382,18 @@ svg{
     padding-left: 1rem;
 }
 
-
 .contact__form-button{
     background-color: var(--black);
     color: var(--white);
     padding: 1.2rem 2.2rem;
     text-transform: uppercase;
     margin-bottom: 2.9rem;
+    transition: .5s;
+}
+
+.contact__form-button:hover{
+    background-color:var(--main-orange);
+    border: 2px solid var(--main-orange)
 }
 
 footer{
@@ -373,6 +421,11 @@ footer p{
     margin-right: .25rem;
     width: 2.3rem;
     height: 2.3rem;
+    transition: .5s;
+}
+
+.footer__social-icons:hover{
+    fill: var(--main-orange);
 }
 
 .footer__atr{
@@ -384,21 +437,22 @@ footer p{
     height: 1.2rem;
 }
 
-
 @media only screen 
 and (min-device-width : 420px) 
 and (max-device-width : 767px) {
 
     .wrapper{
-        max-width: 76.7rem;
+        max-width: 100%;
     }
 }
 
+/* Media Querie for 
+Viewport 768 to 1023 */
 
 @media (min-width: 768px){
 
     .wrapper{
-        max-width: 76.8rem;
+        max-width: 100%;
     }
 
     .navbar{
@@ -441,7 +495,6 @@ and (max-device-width : 767px) {
         width: 100%;
     }
 
-
     .cards-container{
         display: flex;
         flex-direction: row;
@@ -474,25 +527,21 @@ and (max-device-width : 767px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows:  1fr 1fr;
-        gap: .5em;
+        gap: .9em;
     }
 
     .img1{
         grid-column: span 2;
         grid-row: span 2;
-
     }
 
     .img2{
        grid-column: 3/4 
-
     }
 
     .img3{
         grid-column: 4/5 
     }
-
-  
 
     .offer_img{
         margin-bottom: 0;
@@ -503,7 +552,8 @@ and (max-device-width : 767px) {
     }
 }
 
-/* Viewport 1024 to 1366 */
+/* Media Querie for 
+Viewport 1024 to 1366 */
 
 @media (min-width: 1024px){
 
@@ -520,15 +570,11 @@ and (max-device-width : 767px) {
     }
 
     header{
-        /* background-image: url(/images/london.jpg);
-        background-repeat: no-repeat;
-        background-size: contain; */
         padding: 18.8rem 5rem 18.8rem 5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
     }     
 
     .form__search{
@@ -588,18 +634,9 @@ and (max-device-width : 767px) {
         margin-top: -3rem;
     }
 
-    .offers{
-        padding: 1.2rem 14.7rem 1.2rem 14.7rem;
-    }
-
-    .cards{
-        padding: 1.2rem 14.7rem 1.2rem 14.7rem;
-    }
-
-    .newsletter{
-        padding: 1.2rem 14.7rem 1.2rem 14.7rem;
-    }
-
+    .offers,
+    .cards,
+    .newsletter,
     .contact{
         padding: 1.2rem 14.7rem 1.2rem 14.7rem;
     }
@@ -607,7 +644,4 @@ and (max-device-width : 767px) {
     .contact__form-input{
         height: 5.5rem;
     }
-
-
 }
-
