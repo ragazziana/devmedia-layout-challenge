@@ -384,12 +384,16 @@ footer p{
     height: 1.2rem;
 }
 
-@media (min-width: 450px){
+
+@media only screen 
+and (min-device-width : 420px) 
+and (max-device-width : 767px) {
 
     .wrapper{
-        max-width: 42rem;
+        max-width: 76.7rem;
     }
 }
+
 
 @media (min-width: 768px){
 
@@ -406,15 +410,14 @@ footer p{
     }
 
     header{
-        background-image: url(/images/london.jpg);
+        background-image: url(images/london.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10rem; 
-
+        padding: 3.9rem 12.3rem 3.9rem 12.3rem; 
     }
 
     .form__search{
@@ -442,7 +445,7 @@ footer p{
     .cards-container{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .card__img{
@@ -504,7 +507,6 @@ footer p{
 
 @media (min-width: 1024px){
 
-
     .wrapper{
         min-width: 100%;
     }
@@ -518,15 +520,17 @@ footer p{
     }
 
     header{
-        background-image: url(/images/london.jpg);
+        background-color: blueviolet;
+        /* background-image: url(/images/london.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain; */
+        padding: 18.8rem 5rem 18.8rem 5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 13rem 5rem 13rem 5rem;
-    }
+    
+    }     
 
     .form__search{
         display: flex;
