@@ -8,7 +8,7 @@
     --main-orange: hsl(4, 90%, 58%);
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
-    --background-grey: hsl(0, 0%, 85%) ;
+    --background-grey: hsl(200, 12%, 91%) ;
     --dark-background-grey: #606060;
 
     font-size: 62.5%; /* 1rem = 10px */
@@ -128,7 +128,7 @@ img{
 }
 
 .searchbox__title{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 300;
     margin-bottom: 2.5rem;
 }
